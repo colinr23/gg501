@@ -1,0 +1,309 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Spatial Knowledge Mobilization},
+  pdfauthor={Colin Robertson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Spatial Knowledge Mobilization}
+\author{Colin Robertson}
+\date{2021-10-05}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{prerequisites}{%
+\chapter{prerequisites}\label{prerequisites}}
+
+Translating data into actionable insights requires more than analytical tools; the ability to communicate, visualize, deconstruct and interrogate analytic results is an increasingly required set of skills for environmental professionals. This course will build the skills and knowledge needed to interpret, critique, and communicate outputs from data-analytic workflows and processes. Key issues discussed will include parameterization, sensitivity analysis, visualization, and summarizing results for a variety of audiences.
+
+\hypertarget{textbook}{%
+\section{textbook}\label{textbook}}
+
+Wickham, Hadley, Danielle Navaro, and Thomas Lin Pedersen. 2021. Ggplot2: Elegant Graphics for Data Analysis. 3rd ed.~Springer. \url{https://ggplot2-book.org/index.html}.
+
+Chang, Winston. 2021. R Graphics Cookbook, 2nd Edition. \url{https://r-graphics.org}.
+
+\hypertarget{schedule}{%
+\section{schedule}\label{schedule}}
+
+Data/Analytic Visualization
+
+Week
+
+Topic
+
+Tools
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Tabular Data
+
+  R (ggplot2), tableau
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{1}
+  \item
+    Tabular data
+
+    R (ggplot2), tableau
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \setcounter{enumiii}{2}
+    \item
+      Time series data
+
+      R (ggplot2)
+
+      \begin{enumerate}
+      \def\labelenumiv{\arabic{enumiv}.}
+      \setcounter{enumiv}{3}
+      \item
+        Spatial data
+
+        R (ggplot2, tmap, mapsf), R-Shiny, Leaflet
+
+        \begin{enumerate}
+        \def\labelenumv{\arabic{enumv}.}
+        \item
+          Model data
+
+          Graph data R (ggplot2), Javascript (d3)
+        \end{enumerate}
+      \end{enumerate}
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+Data/Analytic Critique
+
+Week
+
+Topic
+
+Tools
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\item
+  Parameterization and validation -- explanatory models
+
+  R (libraries) OLS, GLM
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \item
+    Parameterization and validation -- clustering and forecasting models
+
+    R (libraries) decision trees, hclust, kmeans
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \setcounter{enumiii}{7}
+    \item
+      Parameterization and validation -- spatial analysis models
+
+      R (libraries) spdep, gwr, sf, raster
+
+      \begin{enumerate}
+      \def\labelenumiv{\arabic{enumiv}.}
+      \setcounter{enumiv}{8}
+      \item
+        Social-technical critique
+
+        Readings
+      \end{enumerate}
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+Data to Decisions
+
+Week
+
+Topic
+
+Tools
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  Producing analytic outputs for different audiences
+
+  R markdown / Shiny
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \item
+    Analytic studio workshop 1
+
+    Various
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \setcounter{enumiii}{11}
+    \item
+      Analytic studio workshop 2
+
+      Various
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{evaluation}{%
+\section{evaluation}\label{evaluation}}
+
+Practical Work
+
+There will be two assignments and one term project required for the course. Students will participate in an analytics studio workshop which will involve critically analyzing projects. Coursework will involve the use of a variety GIS and/or statistical software packages.
+
+\hypertarget{grading}{%
+\subsection{grading}\label{grading}}
+
+\begin{longtable}[]{@{}lc@{}}
+\toprule
+practical work & \%\tabularnewline
+\midrule
+\endhead
+Two term assignments & 30\%\tabularnewline
+Term project write-up & 40\%\tabularnewline
+Analytics studio workshop & 15\%\tabularnewline
+Class participation & 15\%\tabularnewline
+Total: & 100\%\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{intro}{%
+\chapter{introduction}\label{intro}}
+
+\hypertarget{what-is-spatial-knowledge-mobilization}{%
+\section{What is Spatial Knowledge Mobilization?}\label{what-is-spatial-knowledge-mobilization}}
+
+\hypertarget{forms-of-spatial-knowledge}{%
+\subsection{Forms of Spatial Knowledge}\label{forms-of-spatial-knowledge}}
+
+\hypertarget{knowledge-mobilization}{%
+\subsection{Knowledge Mobilization}\label{knowledge-mobilization}}
+
+\hypertarget{dataanalytic-visualization}{%
+\chapter{Data/Analytic Visualization}\label{dataanalytic-visualization}}
+
+A list of topics to be covered in this section;
+
+\begin{itemize}
+\tightlist
+\item
+  geospatial data formats
+
+  \begin{itemize}
+  \tightlist
+  \item
+    vector and OGC
+  \item
+    raster
+  \end{itemize}
+\item
+  rgdal
+\item
+  netCDF
+\item
+  stacs
+\item
+  API access
+\item
+  IoT and sensor data
+\end{itemize}
+
+\hypertarget{dataanalytic-critique}{%
+\chapter{Data/Analytic Critique}\label{dataanalytic-critique}}
+
+The preceding chapter assumes a workflow where you are bringing data from elsewhere to your local machine and to perform further analysis. Many platforms now exist to support alternate workflows, where data and analysis remain on the cloud. The space of cloud geospatial is rapidly evolving. In this section we will review some of the more common platforms, discuss strengths and weaknesses, and when you might want to incorporate cloud-based workflows into EDA projects.
+
+\hypertarget{data-to-decisions}{%
+\chapter{Data to Decisions}\label{data-to-decisions}}
+
+Geospatial imagery is an increasingly important type of information source for EDA applications. We consider any image data where earth/environment is captured on pixel arrays and used to better understand environmental phenomena. Such a broad approach to geospatial imagery captures tradtional sources such as earth-observation satellite-based sensors as well as non-traditional platforms such as smartphone cameras, RPS-based image sources, and handheld imaging platforms. Depending on how geospatial information is integrated into image data, there are different considerations for how you might integrated them within a project. We will review some common issues and techniques for handling a variety of image data sources in this chapter.
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

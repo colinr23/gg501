@@ -1,6 +1,0 @@
-# data io
-
-A list of topics to be covered in this section;
-* rgdal
-* stacs
-* 
