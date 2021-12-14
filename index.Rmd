@@ -8,7 +8,7 @@ bibliography: [book.bib, packages.bib]
 always_allow_html: true
 biblio-style: apalike
 link-citations: yes
-description: "GG502 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization."
+description: "GG501 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization."
 ---
 
 # Introduction
