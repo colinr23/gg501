@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Data/Analytic Critique | Spatial Knowledge Mobilization</title>
+  <meta name="description" content="GG502 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Data/Analytic Critique | Spatial Knowledge Mobilization" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="GG502 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Data/Analytic Critique | Spatial Knowledge Mobilization" />
+  
+  <meta name="twitter:description" content="GG502 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="dataanalytic-visualization.html"/>
+<link rel="next" href="data-to-decisions.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GG502</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>1.1</b> textbook</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#schedule"><i class="fa fa-check"></i><b>1.2</b> schedule</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#evaluation"><i class="fa fa-check"></i><b>1.3</b> evaluation</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grading"><i class="fa fa-check"></i><b>1.3.1</b> grading</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html"><i class="fa fa-check"></i><b>2</b> Data/Analytic Visualization</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tabular-data"><i class="fa fa-check"></i><b>2.1</b> Tabular Data</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-readings"><i class="fa fa-check"></i><b>2.1.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.1.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-case"><i class="fa fa-check"></i><b>2.1.2</b> Case Study</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-series-data"><i class="fa fa-check"></i><b>2.2</b> Time Series Data</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-readings"><i class="fa fa-check"></i><b>2.2.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-case"><i class="fa fa-check"></i><b>2.2.2</b> Case Study</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#spatial-data"><i class="fa fa-check"></i><b>2.3</b> Spatial Data</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-readings"><i class="fa fa-check"></i><b>2.3.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.3.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-case"><i class="fa fa-check"></i><b>2.3.2</b> Case Study</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-data"><i class="fa fa-check"></i><b>2.4</b> Model Data</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-readings"><i class="fa fa-check"></i><b>2.4.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.4.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-case"><i class="fa fa-check"></i><b>2.4.2</b> Case Study</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html"><i class="fa fa-check"></i><b>3</b> Data/Analytic Critique</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-i"><i class="fa fa-check"></i><b>3.1</b> Parameterization/Validation I</a></li>
+<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-ii"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation II</a></li>
+<li class="chapter" data-level="3.3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-iii"><i class="fa fa-check"></i><b>3.3</b> Parameterization/Validation III</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-to-decisions.html"><a href="data-to-decisions.html"><i class="fa fa-check"></i><b>4</b> Data to Decisions</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Spatial Knowledge Mobilization</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dataanalytic-critique" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Data/Analytic Critique</h1>
+<p>The preceding chapter assumes a workflow where you are bringing data from elsewhere to your local machine and to perform further analysis. Many platforms now exist to support alternate workflows, where data and analysis remain on the cloud. The space of cloud geospatial is rapidly evolving. In this section we will review some of the more common platforms, discuss strengths and weaknesses, and when you might want to incorporate cloud-based workflows into EDA projects.</p>
+<div id="parameterizationvalidation-i" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Parameterization/Validation I</h2>
+</div>
+<div id="parameterizationvalidation-ii" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Parameterization/Validation II</h2>
+</div>
+<div id="parameterizationvalidation-iii" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Parameterization/Validation III</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="dataanalytic-visualization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-to-decisions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["gg502.pdf", "gg502.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
