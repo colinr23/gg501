@@ -1,19 +1,20 @@
 --- 
 title: "Spatial Knowledge Mobilization"
 author: "Colin Robertson"
-date: "`r Sys.Date()`"
+date: "`r paste(weekdays(Sys.Date()), format(Sys.Date(), '%B %d'))`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 always_allow_html: true
 biblio-style: apalike
 link-citations: yes
-description: "This is a placeholder for GG502 course in the Environmental Data Analytics program."
+description: "GG502 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization."
 ---
 
-# prerequisites
+# Introduction
+**Class Time: Tuesdays, 2:30 - 5:20, Bricker Academic Building BA305**
 
-Translating data into actionable insights requires more than analytical tools; the ability to communicate, visualize, deconstruct and interrogate analytic results is an increasingly required set of skills for environmental professionals. This course will build the skills and knowledge needed to interpret, critique, and communicate outputs from data-analytic workflows and processes. Key issues discussed will include parameterization, sensitivity analysis, visualization, and summarizing results for a variety of audiences. 
+Translating data into actionable insights requires more than analytical tools; the ability to communicate, visualize, deconstruct and interrogate analytic results is an increasingly required set of skills for environmental professionals. This course will build the skills and knowledge needed to interpret, critique, and communicate outputs from data-analytic workflows and processes. Key issues discussed will include data visualization, model parameterization, sensitivity analysis, and summarizing results for a variety of audiences. 
 
 
 ## textbook
@@ -21,54 +22,45 @@ Wickham, Hadley, Danielle Navaro, and Thomas Lin Pedersen. 2021. Ggplot2: Elegan
 
 Chang, Winston. 2021. R Graphics Cookbook, 2nd Edition. [https://r-graphics.org](https://r-graphics.org).
 
+Timbers, T-A., Campbell, T., and Lee, M. 2021. Introducation to Data Science [https://ubc-dsci.github.io/introduction-to-datascience/](https://ubc-dsci.github.io/introduction-to-datascience/)
+
 ## schedule
 ```{r echo=FALSE}
 library(kableExtra)
-df <- data.frame(Week="1.", Topic="Spatial, Knowledge, Mobilization Introduction", Tools="R")
-x2 <- c("2.",	"Tabular data", "R (ggplot2), tableau")
-x3 <- c("3.", "Time series data",	"R (ggplot2)")
-x4 <- c("4.", 	"Spatial data",	"R (ggplot2, tmap, mapsf), R-Shiny, Leaflet")
-x5 <- c("5.",	 "Model data", "R (ggplot2)")
-df <- rbind(df, x2,x3,x4,x5)
+df <- data.frame(Week="Jan 04", Topic="Spatial, Knowledge, Mobilization Introduction", Tools="R")
+x2 <- c("Jan 11",	"Tabular data", "R (ggplot2), tableau")
+x3 <- c("Jan 18", "Time series data",	"R (ggplot2)")
+x4 <- c("Jan 25", 	"Spatial data",	"R (ggplot2, tmap, mapsf), R-Shiny, Leaflet")
+x5 <- c("Feb 01",	 "Model data", "R (ggplot2)")
+x6 <- c("Feb 08",	 "Reading Week", "")
+x7 <- c("Feb 15",	 "Work Period/Catch up", "")
+df <- rbind(df, x2,x3,x4,x5, x6, x7)
 kable(df) %>%  add_header_above(c("Data/Analytic Visualization" = 3))
 ##############################################
-df <- data.frame(Week="6.", Topic="Parameterization and validation – explanatory models", Tools="R (libraries) stat, lme4")
-x3 <- c("7.", "Parameterization and validation – clustering and forecasting models",	"R (libraries) randomForest, kmeans")
-x4 <- c("8.", 	"Parameterization and validation – spatial analysis models",	"R (libraries) spdep, gwr, sf, raster")
-x5 <- c("9.",	 "Social-technical critique", "Readings")
+df <- data.frame(Week="Feb 22", Topic="Parameterization and validation I", Tools="R (libraries) stat, lme4")
+x3 <- c("Mar 01", "Parameterization and validation II",	"R (randomForest, kmeans)")
+x4 <- c("Mar 08", 	"Parameterization and validation III",	"R (spdep, gwr, sf, raster)")
+x5 <- c("Mar 15",	 "Modelling: Socio-technical critique", "Readings")
+x5 <- c("Mar 22",	 "Work Period/Catch up", "")
 df <- rbind(df,x3,x4,x5)
 kable(df) %>%  add_header_above(c("Data/Analytic Critique" = 3))
 
 ##############################################
-df <- data.frame(Week="10.", Topic="Producing analytic outputs for different audiences", Tools="R markdown / Shiny")
-x3 <- c("11.", "Analytic studio workshop 1",	"Various")
-x4 <- c("12.", 	"Analytic studio workshop 2",	"Various")
+df <- data.frame(Week="Mar 29", Topic="Communications strategies for EDA", Tools="R markdown / Shiny")
+x4 <- c("Apr 05", 	"Term Project Presentations",	"")
 
-df <- rbind(df,x3,x4)
+df <- rbind(df,x4)
 kable(df) %>%  add_header_above(c("Data to Decisions" = 3))
-
-
-## 
-
-
-#```{r include=FALSE}
-# automatically create a bib database for R packages
-#knitr::write_bib(c(
-#  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-#), 'packages.bib')
 ```
 
 ## evaluation
-Practical Work
-
-There will be two assignments and one term project required for the course. Students will participate in an analytics studio workshop which will involve critically analyzing projects. 
+This is hands on class, with a lot of code review and examples rather than traditional lectures. Students progress in the course will be evaluated with three independent assignments and one final term project. Students will be expected to attend and participate in designated course times. Participate includes contributing to discussions and working collaboratively with other students when needed. 
 
 ### grading
 
- practical work            |%   
+ Assessment            |Weighting   
 ---------------------------|:------:
- Two term assignments | 30%  
- Term project write-up | 40%  
- Analytics studio workshop |	15%  
+ Three assignments | 45%  
+ Term project | 40%  
  Class participation | 15%  
 Total: | 100% 
