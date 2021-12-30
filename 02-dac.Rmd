@@ -1,12 +1,12 @@
-# Data/Analytic Critique
+<!-- # Data/Analytic Critique -->
 
-The preceding chapter assumes a workflow where you are bringing data from elsewhere to your local machine and to perform further analysis. Many platforms now exist to support alternate workflows, where data and analysis remain on the cloud. The space of cloud geospatial is rapidly evolving. In this section we will review some of the more common platforms, discuss strengths and weaknesses, and when you might want to incorporate cloud-based workflows into EDA projects. 
-
-
-## Parameterization/Validation I
+<!-- The preceding chapter assumes a workflow where you are bringing data from elsewhere to your local machine and to perform further analysis. Many platforms now exist to support alternate workflows, where data and analysis remain on the cloud. The space of cloud geospatial is rapidly evolving. In this section we will review some of the more common platforms, discuss strengths and weaknesses, and when you might want to incorporate cloud-based workflows into EDA projects.  -->
 
 
-## Parameterization/Validation II
+<!-- ## Parameterization/Validation I -->
 
 
-## Parameterization/Validation III
+<!-- ## Parameterization/Validation II -->
+
+
+<!-- ## Parameterization/Validation III -->
