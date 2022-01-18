@@ -50,7 +50,6 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -90,6 +89,10 @@
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-readings"><i class="fa fa-check"></i><b>2.2.1</b> Readings this week</a></li>
 <li class="chapter" data-level="2.2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-case"><i class="fa fa-check"></i><b>2.2.2</b> Case Study</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-series-data"><i class="fa fa-check"></i><b>2.3</b> Time Series Data</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-readings"><i class="fa fa-check"></i><b>2.3.1</b> Readings this week</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>3</b> Assignments</a>
@@ -159,7 +162,7 @@
 <div id="tab-case" class="section level3" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Case Study</h3>
 <p>Surveying farmers about agricultural practices. This project was in consultation with an environmental agriculture association aiming to understand barriers to the adoption of specific farming practices, specifically the use of <a href="https://www.sare.org/resources/cover-crops/">cover crops</a>.</p>
-<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure"><span id="fig:unnamed-chunk-1"></span>
 <img src="img/covercrops.jpeg" alt="Red Clover cover crops on farm field. Image credit: https://www.country-guide.ca/" width="60%" />
 <p class="caption">
 Figure 2.1: Red Clover cover crops on farm field. Image credit: <a href="https://www.country-guide.ca/" class="uri">https://www.country-guide.ca/</a>
@@ -167,7 +170,7 @@ Figure 2.1: Red Clover cover crops on farm field. Image credit: <a href="https:/
 </div>
 <p>The survey asked farmers about their use of cover crops and any barriers they experienced in applying this practice to their farms. We will walk-through a detailed analysis of this farmer survey data, which is primarily tabular data with some spatial and temporal components.</p>
 First, let’s look at the raw data.
-<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
 <img src="img/covercropsdata.png" alt="Snapshot of farmer  survey data" width="90%" />
 <p class="caption">
 Figure 2.2: Snapshot of farmer survey data
@@ -190,16 +193,23 @@ Figure 2.2: Snapshot of farmer survey data
 <li>are the data complete? (i.e., are all the expected rows there, does the rowcount = the sample size)</li>
 </ul>
 <p>Secondly, let’s examine the end product we created to explore this data. The graphs here were used in a report summarizign key trends.</p>
-<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<div class="figure"><span id="fig:unnamed-chunk-3"></span>
 <img src="img/coverscreen.png" alt="Screenshot of farmer survey report. [View the full report here.](https://rpubs.com/colinr23/farmers)" width="90%" />
 <p class="caption">
 Figure 2.3: Screenshot of farmer survey report. <a href="https://rpubs.com/colinr23/farmers">View the full report here.</a>
 </p>
 </div>
-<!-- ## Time Series Data -->
-<!-- ### Readings this week {#time-readings} -->
-<!-- * [Neon Tutorial - Time Series with ggplot2 in R](https://www.neonscience.org/resources/learning-hub/tutorials/dc-time-series-plot-ggplot-r) -->
-<!-- * [Lubridate Cheat Sheet](https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf) -->
+</div>
+</div>
+<div id="time-series-data" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Time Series Data</h2>
+<div id="time-readings" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Readings this week</h3>
+<ul>
+<li><a href="https://www.neonscience.org/resources/learning-hub/tutorials/dc-time-series-plot-ggplot-r">Neon Tutorial - Time Series with ggplot2 in R</a></li>
+<li><a href="https://buildmedia.readthedocs.org/media/pdf/a-little-book-of-r-for-time-series/latest/a-little-book-of-r-for-time-series.pdf">A Little Book of R for Time Series</a></li>
+<li><a href="https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf">Lubridate Cheat Sheet</a></li>
+</ul>
 <!-- ### Case Study {#time-case} -->
 <!-- ## Spatial Data -->
 <!-- ### Readings this week {#space-readings} -->
