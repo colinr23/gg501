@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Assignments | Spatial Knowledge Mobilization</title>
+  <title>Chapter 4 Assignments | Spatial Knowledge Mobilization</title>
   <meta name="description" content="GG501 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Assignments | Spatial Knowledge Mobilization" />
+  <meta property="og:title" content="Chapter 4 Assignments | Spatial Knowledge Mobilization" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Assignments | Spatial Knowledge Mobilization" />
+  <meta name="twitter:title" content="Chapter 4 Assignments | Spatial Knowledge Mobilization" />
   
   <meta name="twitter:description" content="GG501 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
   
@@ -30,10 +30,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="dataanalytic-visualization.html"/>
+<link rel="prev" href="dataanalytic-critique.html"/>
 
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +50,74 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -105,19 +171,27 @@
 <li class="chapter" data-level="2.5.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-readings"><i class="fa fa-check"></i><b>2.5.1</b> Resources this week</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>3</b> Assignments</a>
+<li class="chapter" data-level="3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html"><i class="fa fa-check"></i><b>3</b> Data/Analytic Critique</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="assignments.html"><a href="assignments.html#assignment-1---exploratory-visulization-in-ggplot"><i class="fa fa-check"></i><b>3.1</b> Assignment 1 - Exploratory Visulization in ggplot</a>
+<li class="chapter" data-level="3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#spatial-modelling-example---adapted-workshop-example"><i class="fa fa-check"></i><b>3.1</b> Spatial modelling example - adapted workshop example</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="assignments.html"><a href="assignments.html#questions"><i class="fa fa-check"></i><b>3.1.1</b> Questions</a></li>
-<li class="chapter" data-level="3.1.2" data-path="assignments.html"><a href="assignments.html#submission"><i class="fa fa-check"></i><b>3.1.2</b> Submission</a></li>
+<li class="chapter" data-level="3.1.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit-readings"><i class="fa fa-check"></i><b>3.1.1</b> Resources this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="assignments.html"><a href="assignments.html#assignment-2---spatial-and-temporal-visualization-of-urban-data"><i class="fa fa-check"></i><b>3.2</b> Assignment 2 - Spatial and temporal visualization of urban data</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="assignments.html"><a href="assignments.html#submission-1"><i class="fa fa-check"></i><b>3.2.1</b> Submission</a></li>
+<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-i"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation I</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="assignments.html"><a href="assignments.html#assignment-3---tidy-tuesday-submission"><i class="fa fa-check"></i><b>3.3</b> Assignment 3 - Tidy Tuesday Submission</a></li>
-<li class="chapter" data-level="3.4" data-path="assignments.html"><a href="assignments.html#term-project"><i class="fa fa-check"></i><b>3.4</b> Term Project</a></li>
+<li class="chapter" data-level="4" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>4</b> Assignments</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="assignments.html"><a href="assignments.html#assignment-1---exploratory-visulization-in-ggplot"><i class="fa fa-check"></i><b>4.1</b> Assignment 1 - Exploratory Visulization in ggplot</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="assignments.html"><a href="assignments.html#questions"><i class="fa fa-check"></i><b>4.1.1</b> Questions</a></li>
+<li class="chapter" data-level="4.1.2" data-path="assignments.html"><a href="assignments.html#submission"><i class="fa fa-check"></i><b>4.1.2</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="assignments.html"><a href="assignments.html#assignment-2---spatial-and-temporal-visualization-of-urban-data"><i class="fa fa-check"></i><b>4.2</b> Assignment 2 - Spatial and temporal visualization of urban data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="assignments.html"><a href="assignments.html#submission-1"><i class="fa fa-check"></i><b>4.2.1</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="assignments.html"><a href="assignments.html#assignment-3---tidy-tuesday-submission"><i class="fa fa-check"></i><b>4.3</b> Assignment 3 - Tidy Tuesday Submission</a></li>
+<li class="chapter" data-level="4.4" data-path="assignments.html"><a href="assignments.html#term-project"><i class="fa fa-check"></i><b>4.4</b> Term Project</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -139,10 +213,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="assignments" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Assignments</h1>
-<div id="assignment-1---exploratory-visulization-in-ggplot" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Assignment 1 - Exploratory Visulization in ggplot</h2>
+<div id="assignments" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Assignments</h1>
+<div id="assignment-1---exploratory-visulization-in-ggplot" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Assignment 1 - Exploratory Visulization in ggplot</h2>
 <p>Your objective in this assignment is to select a datset and do some exploratory analysis and visualization. You should select a dataset that interests you from <a href="https://vincentarelbundock.github.io/Rdatasets/articles/data.html">this online repository of datasets from various R packages</a>. The dataset you select should be different from other members of the class. Questions 1-4 should be completed with on selected dataset, and question 5 should be completed with another dataset.</p>
 <p>You have to structure your assignment as a r mardown file. Watch this video (~45 mins) to learn how to start and navigate markdown files in R-Studio.</p>
 <p><em>Disclaimer: I am not endorsing buying these courses - this is just a straightforward introduction to get up to up and running with R-markdown.</em></p>
@@ -150,8 +224,8 @@
 </iframe>
 <p><a href="https://www.dropbox.com/s/fk4hnt8a51h7jh4/sample.Rmd">You can use the following as a template</a> [download to your working directory, and open in R-studio to edit/knit] to get you started for your assignment.</p>
 <p>Your assignment should answer the following questions and be totally reproducible.This means that you must read data in from a URL so that I can replicate your work, do not include any external data files in your submission, only submit one .Rmd file.</p>
-<div id="questions" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> Questions</h3>
+<div id="questions" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Questions</h3>
 <ol style="list-style-type: decimal">
 <li><p>Explain in a couple of sentences why you selected this dataset. [2 marks]</p></li>
 <li><p>Create a bar plot using <code>ggplot2</code> graphing. Write a sentence interpreting what is happening in the graph. Make sure you read up on the documentation of the data to understand what is represented and how it was measured. [5 marks]</p></li>
@@ -162,13 +236,13 @@ For each, include a visualization to illustrate (which may or may not be a graph
 <li><p>What might or could you have done differently in question 5 if you were preparing the analysis for another audience/user community? [5 marks]</p></li>
 </ol>
 </div>
-<div id="submission" class="section level3" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Submission</h3>
+<div id="submission" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Submission</h3>
 <p>Submit via email to Colin at the start of class on January 25</p>
 </div>
 </div>
-<div id="assignment-2---spatial-and-temporal-visualization-of-urban-data" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Assignment 2 - Spatial and temporal visualization of urban data</h2>
+<div id="assignment-2---spatial-and-temporal-visualization-of-urban-data" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Assignment 2 - Spatial and temporal visualization of urban data</h2>
 <p>Your objective in this assignment is to perform a real-world analysis of geospatial data from an urban centre. In this assignment you are taking on the role of an geospatial consultant tasked with analyzing aspects of the transportation system in a Canadian city that will be assigned to you. The specific explored is up to you and to some extent will be a function of the available data, but feel free to do some background research.</p>
 <ul>
 <li>Jean-Pierre - Montreal</li>
@@ -187,19 +261,19 @@ For each, include a visualization to illustrate (which may or may not be a graph
 <li>presentation (20%)</li>
 </ul>
 <p>Recall some of the ideas about story-telling with data as you think through and put together your analysis and report.</p>
-<div id="submission-1" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Submission</h3>
+<div id="submission-1" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Submission</h3>
 <p>Submit the markdown report via email to Colin at the start of class on March 1, presentations will take place that day as well.</p>
 </div>
 </div>
-<div id="assignment-3---tidy-tuesday-submission" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Assignment 3 - Tidy Tuesday Submission</h2>
+<div id="assignment-3---tidy-tuesday-submission" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Assignment 3 - Tidy Tuesday Submission</h2>
 <p>For this assignment we will complete a <strong>Tidy Tuesday submission</strong>. Tidy Tuesday came out of the <a href="https://r4ds.had.co.nz/">R4DS (R for data science) Texbook and Online Learning Community</a> by Hadley Wickham and Garrett Grolemund. Every week a new data set (i.e. data is partly preprocessed but not completely tidy) alongside an article or a source is posted on the <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022">Tidy Tuesday GitHub repository</a>.</p>
 <p>The goal is to explore this data set using data wrangling and summarizing techniques and (lots of) insightful visualizations. You will <strong>only have around 24 hours</strong> to create a visualization based on these data. If you use any external sources (e.g., other submissions) for ideas or as sources you must cite them, though you should strive to create a totally original visualization. You will need to submit code used to produce the visualization as well as an image file of the submission. The data are release on github on Monday, and your submission must be handed in by <strong>end of day Tuesday, March 22</strong>.</p>
 <p>Participation in the Tidy Tuesday project may also serve to be an introduction to the wider R user community. There is a very active R user community on Twitter, <a href="https://www.youtube.com/watch?v=89l_3Y53qMM&amp;ab_channel=DavidRobinson">people livestream their R coding sessions on YouTube</a>, and Tidy Tuesday submissions are typically shared on Twitter with the <a href="https://twitter.com/search?q=%23TidyTuesday">#tidyTuesday hashtag</a>. You are welcome to share your submission with the wider community after you submit it.</p>
 </div>
-<div id="term-project" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Term Project</h2>
+<div id="term-project" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Term Project</h2>
 <p>Your task for a term project is to complete an independent data analysis project on a topic of your choosing. You must source your own dataset for this project. The project should address some clearly articulated questions and include enough contextual information about the problem in order to motivate your analysis.</p>
 <p>You will create two outputs from your work:</p>
 <ol style="list-style-type: decimal">
@@ -229,12 +303,11 @@ The length of the report should be between 4000 and 6000 words.</li>
           </div>
         </div>
       </div>
-<a href="dataanalytic-visualization.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dataanalytic-critique.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -253,6 +326,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -273,6 +347,10 @@ gitbook.start({
 "text": null
 },
 "download": ["gg501.pdf", "gg501.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

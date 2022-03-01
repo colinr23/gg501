@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Data/Analytic Visualization | Spatial Knowledge Mobilization</title>
   <meta name="description" content="GG501 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Data/Analytic Visualization | Spatial Knowledge Mobilization" />
   <meta property="og:type" content="book" />
@@ -31,9 +31,10 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="assignments.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="dataanalytic-critique.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +50,74 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -105,19 +171,27 @@
 <li class="chapter" data-level="2.5.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-readings"><i class="fa fa-check"></i><b>2.5.1</b> Resources this week</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>3</b> Assignments</a>
+<li class="chapter" data-level="3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html"><i class="fa fa-check"></i><b>3</b> Data/Analytic Critique</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="assignments.html"><a href="assignments.html#assignment-1---exploratory-visulization-in-ggplot"><i class="fa fa-check"></i><b>3.1</b> Assignment 1 - Exploratory Visulization in ggplot</a>
+<li class="chapter" data-level="3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#spatial-modelling-example---adapted-workshop-example"><i class="fa fa-check"></i><b>3.1</b> Spatial modelling example - adapted workshop example</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="assignments.html"><a href="assignments.html#questions"><i class="fa fa-check"></i><b>3.1.1</b> Questions</a></li>
-<li class="chapter" data-level="3.1.2" data-path="assignments.html"><a href="assignments.html#submission"><i class="fa fa-check"></i><b>3.1.2</b> Submission</a></li>
+<li class="chapter" data-level="3.1.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit-readings"><i class="fa fa-check"></i><b>3.1.1</b> Resources this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="assignments.html"><a href="assignments.html#assignment-2---spatial-and-temporal-visualization-of-urban-data"><i class="fa fa-check"></i><b>3.2</b> Assignment 2 - Spatial and temporal visualization of urban data</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="assignments.html"><a href="assignments.html#submission-1"><i class="fa fa-check"></i><b>3.2.1</b> Submission</a></li>
+<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-i"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation I</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="assignments.html"><a href="assignments.html#assignment-3---tidy-tuesday-submission"><i class="fa fa-check"></i><b>3.3</b> Assignment 3 - Tidy Tuesday Submission</a></li>
-<li class="chapter" data-level="3.4" data-path="assignments.html"><a href="assignments.html#term-project"><i class="fa fa-check"></i><b>3.4</b> Term Project</a></li>
+<li class="chapter" data-level="4" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>4</b> Assignments</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="assignments.html"><a href="assignments.html#assignment-1---exploratory-visulization-in-ggplot"><i class="fa fa-check"></i><b>4.1</b> Assignment 1 - Exploratory Visulization in ggplot</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="assignments.html"><a href="assignments.html#questions"><i class="fa fa-check"></i><b>4.1.1</b> Questions</a></li>
+<li class="chapter" data-level="4.1.2" data-path="assignments.html"><a href="assignments.html#submission"><i class="fa fa-check"></i><b>4.1.2</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="assignments.html"><a href="assignments.html#assignment-2---spatial-and-temporal-visualization-of-urban-data"><i class="fa fa-check"></i><b>4.2</b> Assignment 2 - Spatial and temporal visualization of urban data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="assignments.html"><a href="assignments.html#submission-1"><i class="fa fa-check"></i><b>4.2.1</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="assignments.html"><a href="assignments.html#assignment-3---tidy-tuesday-submission"><i class="fa fa-check"></i><b>4.3</b> Assignment 3 - Tidy Tuesday Submission</a></li>
+<li class="chapter" data-level="4.4" data-path="assignments.html"><a href="assignments.html#term-project"><i class="fa fa-check"></i><b>4.4</b> Term Project</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -178,7 +252,7 @@
 <div id="tab-case" class="section level3" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Case Study</h3>
 <p>Surveying farmers about agricultural practices. This project was in consultation with an environmental agriculture association aiming to understand barriers to the adoption of specific farming practices, specifically the use of <a href="https://www.sare.org/resources/cover-crops/">cover crops</a>.</p>
-<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
 <img src="img/covercrops.jpeg" alt="Red Clover cover crops on farm field. Image credit: https://www.country-guide.ca/" width="60%" />
 <p class="caption">
 Figure 2.1: Red Clover cover crops on farm field. Image credit: <a href="https://www.country-guide.ca/" class="uri">https://www.country-guide.ca/</a>
@@ -186,7 +260,7 @@ Figure 2.1: Red Clover cover crops on farm field. Image credit: <a href="https:/
 </div>
 <p>The survey asked farmers about their use of cover crops and any barriers they experienced in applying this practice to their farms. We will walk-through a detailed analysis of this farmer survey data, which is primarily tabular data with some spatial and temporal components.</p>
 First, let’s look at the raw data.
-<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
 <img src="img/covercropsdata.png" alt="Snapshot of farmer  survey data" width="90%" />
 <p class="caption">
 Figure 2.2: Snapshot of farmer survey data
@@ -209,7 +283,7 @@ Figure 2.2: Snapshot of farmer survey data
 <li>are the data complete? (i.e., are all the expected rows there, does the rowcount = the sample size)</li>
 </ul>
 <p>Secondly, let’s examine the end product we created to explore this data. The graphs here were used in a report summarizign key trends.</p>
-<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
 <img src="img/coverscreen.png" alt="Screenshot of farmer survey report. [View the full report here.](https://rpubs.com/colinr23/farmers)" width="90%" />
 <p class="caption">
 Figure 2.3: Screenshot of farmer survey report. <a href="https://rpubs.com/colinr23/farmers">View the full report here.</a>
@@ -261,14 +335,6 @@ Figure 2.3: Screenshot of farmer survey report. <a href="https://rpubs.com/colin
 </ul>
 <!-- ### Case Study {#model-case} -->
 
-<!-- # Data/Analytic Critique -->
-<!-- The preceding chapter assumes a workflow where you are bringing data from elsewhere to your local machine and to perform further analysis. Many platforms now exist to support alternate workflows, where data and analysis remain on the cloud. The space of cloud geospatial is rapidly evolving. In this section we will review some of the more common platforms, discuss strengths and weaknesses, and when you might want to incorporate cloud-based workflows into EDA projects.  -->
-<!-- ## Parameterization/Validation I -->
-<!-- ## Parameterization/Validation II -->
-
-<!-- # Data to Decisions -->
-<!-- Geospatial imagery is an increasingly important type of information source for EDA applications. We consider any image data where earth/environment is captured on pixel arrays and used to better understand environmental phenomena. Such a broad approach to geospatial imagery captures tradtional sources such as earth-observation satellite-based sensors as well as non-traditional platforms such as smartphone cameras, RPS-based image sources, and handheld imaging platforms. Depending on how geospatial information is integrated into image data, there are different considerations for how you might integrated them within a project. We will review some common issues and techniques for handling a variety of image data sources in this chapter. -->
-
 </div>
 </div>
 </div>
@@ -278,11 +344,10 @@ Figure 2.3: Screenshot of farmer survey report. <a href="https://rpubs.com/colin
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="assignments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="dataanalytic-critique.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -301,6 +366,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -321,6 +387,10 @@ gitbook.start({
 "text": null
 },
 "download": ["gg501.pdf", "gg501.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
