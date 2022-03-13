@@ -52,7 +52,6 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 <style type="text/css">
@@ -177,7 +176,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit-readings"><i class="fa fa-check"></i><b>3.1.1</b> Resources this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-i"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation I</a></li>
+<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-iii"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation I/II</a></li>
+<li class="chapter" data-level="3.3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelling-socio-technical-critique"><i class="fa fa-check"></i><b>3.3</b> Modelling: Socio-Technical Critique</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit2-readings"><i class="fa fa-check"></i><b>3.3.1</b> Resources this week</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#communications-strategies-for-eda"><i class="fa fa-check"></i><b>3.4</b> Communications strategies for EDA</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>4</b> Assignments</a>
 <ul>
@@ -274,7 +278,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-13"><a href="dataanalytic-critique.html#cb4-13" aria-hidden="true"></a>ptshp &lt;-<span class="st"> </span><span class="kw">SpatialPointsDataFrame</span>(plt[,<span class="kw">c</span>(<span class="st">&quot;LON&quot;</span>,<span class="st">&quot;LAT&quot;</span>)], plt,      <span class="dt">proj4string =</span> <span class="kw">CRS</span>(prj4str))</span>
 <span id="cb4-14"><a href="dataanalytic-critique.html#cb4-14" aria-hidden="true"></a><span class="co">## Display the points</span></span>
 <span id="cb4-15"><a href="dataanalytic-critique.html#cb4-15" aria-hidden="true"></a><span class="kw">plot</span>(ptshp)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="dataanalytic-critique.html#cb5-1" aria-hidden="true"></a><span class="co">## Predictor variables:</span></span>
 <span id="cb5-2"><a href="dataanalytic-critique.html#cb5-2" aria-hidden="true"></a>    <span class="co"># Landsat Thematic Mapper, band 5   30-m spectral data, band 5, resampled to 90 m</span></span>
 <span id="cb5-3"><a href="dataanalytic-critique.html#cb5-3" aria-hidden="true"></a>    <span class="co"># Landsat Thematic Mapper, NDVI 30-m spectral data, NDVI, resampled to 90 m</span></span>
@@ -356,7 +360,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-6"><a href="dataanalytic-critique.html#cb9-6" aria-hidden="true"></a>slope &lt;-<span class="st"> </span><span class="kw">terrain</span>(<span class="kw">raster</span>(elevfn), <span class="dt">opt=</span><span class="kw">c</span>(<span class="st">&#39;slope&#39;</span>), <span class="dt">unit=</span><span class="st">&#39;degrees&#39;</span>,    <span class="dt">filename=</span>slpfn, <span class="dt">datatype=</span><span class="st">&#39;INT1U&#39;</span>, <span class="dt">overwrite=</span><span class="ot">TRUE</span>)</span>
 <span id="cb9-7"><a href="dataanalytic-critique.html#cb9-7" aria-hidden="true"></a><span class="co">####************* this may take some time ****************  </span></span>
 <span id="cb9-8"><a href="dataanalytic-critique.html#cb9-8" aria-hidden="true"></a><span class="kw">plot</span>(slope, <span class="dt">col=</span><span class="kw">topo.colors</span>(<span class="dv">6</span>))</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="dataanalytic-critique.html#cb10-1" aria-hidden="true"></a><span class="co">####************* this may take some time ****************</span></span>
 <span id="cb10-2"><a href="dataanalytic-critique.html#cb10-2" aria-hidden="true"></a></span>
 <span id="cb10-3"><a href="dataanalytic-critique.html#cb10-3" aria-hidden="true"></a></span>
@@ -433,13 +437,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## resolution : 30, 30  (x, y)
 ## extent     : 481612.1, 612352.1, 4477098, 4539498  (xmin, xmax, ymin, ymax)
 ## crs        : +proj=utm +zone=12 +datum=WGS84 +units=m +no_defs 
-## source     : memory
+## source     : /private/var/folders/ms/1g6n66qn0jx2dvss7cwh431c0000gn/T/Rtmpyp2ytu/raster/r_tmp_2022-03-13_075819_20254_44119.grd 
 ## names      : aspect 
 ## values     : 0, 6.283185  (min, max)</code></pre>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="dataanalytic-critique.html#cb16-1" aria-hidden="true"></a><span class="co"># Note: Make sure to use radians, not degrees</span></span>
 <span id="cb16-2"><a href="dataanalytic-critique.html#cb16-2" aria-hidden="true"></a><span class="co">####************* this may take some time ****************</span></span>
 <span id="cb16-3"><a href="dataanalytic-critique.html#cb16-3" aria-hidden="true"></a><span class="kw">plot</span>(aspectr, <span class="dt">col=</span><span class="kw">terrain.colors</span>(<span class="dv">6</span>))</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-3.png" width="672" /></p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="dataanalytic-critique.html#cb17-1" aria-hidden="true"></a><span class="co">## Aspect is a circular variable. There are a couple ways to deal with this:</span></span>
 <span id="cb17-2"><a href="dataanalytic-critique.html#cb17-2" aria-hidden="true"></a></span>
 <span id="cb17-3"><a href="dataanalytic-critique.html#cb17-3" aria-hidden="true"></a><span class="co">## 1. Convert the values to a categorical variable (ex. North, South, West, East)</span></span>
@@ -452,7 +456,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## resolution : 30, 30  (x, y)
 ## extent     : 481612.1, 612352.1, 4477098, 4539498  (xmin, xmax, ymin, ymax)
 ## crs        : +proj=utm +zone=12 +datum=WGS84 +units=m +no_defs 
-## source     : memory
+## source     : /private/var/folders/ms/1g6n66qn0jx2dvss7cwh431c0000gn/T/Rtmpyp2ytu/raster/r_tmp_2022-03-13_075836_20254_49048.grd 
 ## names      : layer 
 ## values     : 0, 360  (min, max)</code></pre>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="dataanalytic-critique.html#cb19-1" aria-hidden="true"></a><span class="co">## Now, create a look-up table of reclass values.</span></span>
@@ -491,7 +495,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## resolution : 30, 30  (x, y)
 ## extent     : 481612.1, 612352.1, 4477098, 4539498  (xmin, xmax, ymin, ymax)
 ## crs        : +proj=utm +zone=12 +datum=WGS84 +units=m +no_defs 
-## source     : memory
+## source     : /private/var/folders/ms/1g6n66qn0jx2dvss7cwh431c0000gn/T/Rtmpyp2ytu/raster/r_tmp_2022-03-13_075838_20254_13483.grd 
 ## names      : layer 
 ## values     : 1, 4  (min, max)</code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="dataanalytic-critique.html#cb27-1" aria-hidden="true"></a><span class="kw">unique</span>(aspcl)</span></code></pre></div>
@@ -502,7 +506,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb29-4"><a href="dataanalytic-critique.html#cb29-4" aria-hidden="true"></a>lab.pts &lt;-<span class="st"> </span>bks[<span class="op">-</span><span class="dv">1</span>]<span class="op">-</span><span class="kw">diff</span>(bks)<span class="op">/</span><span class="dv">2</span>  <span class="co"># Label position</span></span>
 <span id="cb29-5"><a href="dataanalytic-critique.html#cb29-5" aria-hidden="true"></a><span class="co">####************* this may take some time ****************</span></span>
 <span id="cb29-6"><a href="dataanalytic-critique.html#cb29-6" aria-hidden="true"></a><span class="kw">plot</span>(aspcl, <span class="dt">col=</span>cols, <span class="dt">axis.args=</span><span class="kw">list</span>(<span class="dt">at=</span>lab.pts, <span class="dt">labels=</span>labs), <span class="dt">breaks=</span>bks)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-4.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-4.png" width="672" /></p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="dataanalytic-critique.html#cb30-1" aria-hidden="true"></a><span class="co">## 2. Convert to a linear variable (ex. solar radiation index; Roberts and Cooper 1989)</span></span>
 <span id="cb30-2"><a href="dataanalytic-critique.html#cb30-2" aria-hidden="true"></a></span>
 <span id="cb30-3"><a href="dataanalytic-critique.html#cb30-3" aria-hidden="true"></a>aspval &lt;-<span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="kw">cos</span>(aspectr<span class="op">+</span><span class="dv">30</span>))<span class="op">/</span><span class="dv">2</span>   <span class="co">## Roberts and Cooper 1989</span></span>
@@ -512,11 +516,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## resolution : 30, 30  (x, y)
 ## extent     : 481612.1, 612352.1, 4477098, 4539498  (xmin, xmax, ymin, ymax)
 ## crs        : +proj=utm +zone=12 +datum=WGS84 +units=m +no_defs 
-## source     : memory
+## source     : /private/var/folders/ms/1g6n66qn0jx2dvss7cwh431c0000gn/T/Rtmpyp2ytu/raster/r_tmp_2022-03-13_075858_20254_15972.grd 
 ## names      : layer 
-## values     : 7.793766e-13, 1  (min, max)</code></pre>
+## values     : 0, 1  (min, max)</code></pre>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="dataanalytic-critique.html#cb32-1" aria-hidden="true"></a><span class="kw">plot</span>(aspval)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-5.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-5.png" width="672" /></p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="dataanalytic-critique.html#cb33-1" aria-hidden="true"></a><span class="co">## Let&#39;s multiply by 100 and round so it will be an integer (less memory)</span></span>
 <span id="cb33-2"><a href="dataanalytic-critique.html#cb33-2" aria-hidden="true"></a>aspval &lt;-<span class="st"> </span><span class="kw">round</span>(aspval <span class="op">*</span><span class="st"> </span><span class="dv">100</span>)</span>
 <span id="cb33-3"><a href="dataanalytic-critique.html#cb33-3" aria-hidden="true"></a>aspval</span></code></pre></div>
@@ -525,11 +529,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## resolution : 30, 30  (x, y)
 ## extent     : 481612.1, 612352.1, 4477098, 4539498  (xmin, xmax, ymin, ymax)
 ## crs        : +proj=utm +zone=12 +datum=WGS84 +units=m +no_defs 
-## source     : memory
+## source     : /private/var/folders/ms/1g6n66qn0jx2dvss7cwh431c0000gn/T/Rtmpyp2ytu/raster/r_tmp_2022-03-13_075912_20254_19843.grd 
 ## names      : layer 
 ## values     : 0, 100  (min, max)</code></pre>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="dataanalytic-critique.html#cb35-1" aria-hidden="true"></a><span class="kw">plot</span>(aspval)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-8-6.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-4-6.png" width="672" /></p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="dataanalytic-critique.html#cb36-1" aria-hidden="true"></a><span class="co"># Save this layer to file</span></span>
 <span id="cb36-2"><a href="dataanalytic-critique.html#cb36-2" aria-hidden="true"></a>aspvalfn &lt;-<span class="st"> &quot;workshop_data/SampleData_Spatial/uintaN_aspval.img&quot;</span></span>
 <span id="cb36-3"><a href="dataanalytic-critique.html#cb36-3" aria-hidden="true"></a><span class="kw">writeRaster</span>(aspval, <span class="dt">filename=</span>aspvalfn, <span class="dt">datatype=</span><span class="st">&#39;INT1U&#39;</span>, <span class="dt">overwrite=</span><span class="ot">TRUE</span>)</span>
@@ -750,12 +754,12 @@ One of the most common uses of GIS and spatial processing functions in <code>r</
 <span id="cb69-5"><a href="dataanalytic-critique.html#cb69-5" aria-hidden="true"></a></span>
 <span id="cb69-6"><a href="dataanalytic-critique.html#cb69-6" aria-hidden="true"></a><span class="kw">plot</span>(asp.tree)</span>
 <span id="cb69-7"><a href="dataanalytic-critique.html#cb69-7" aria-hidden="true"></a><span class="kw">text</span>(asp.tree, <span class="dt">cex=</span><span class="fl">0.75</span>)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="dataanalytic-critique.html#cb70-1" aria-hidden="true"></a><span class="co">## Regression tree</span></span>
 <span id="cb70-2"><a href="dataanalytic-critique.html#cb70-2" aria-hidden="true"></a>carb.tree &lt;-<span class="st"> </span><span class="kw">rpart</span>(CARBON_KG <span class="op">~</span><span class="st"> </span>TMB5 <span class="op">+</span><span class="st"> </span>TMndvi <span class="op">+</span><span class="st"> </span>fnfrcl <span class="op">+</span><span class="st"> </span>elevm <span class="op">+</span><span class="st"> </span>slp <span class="op">+</span><span class="st"> </span>aspval,   <span class="dt">data=</span>modeldat)</span>
 <span id="cb70-3"><a href="dataanalytic-critique.html#cb70-3" aria-hidden="true"></a><span class="kw">plot</span>(carb.tree)</span>
 <span id="cb70-4"><a href="dataanalytic-critique.html#cb70-4" aria-hidden="true"></a><span class="kw">text</span>(carb.tree, <span class="dt">cex=</span><span class="fl">0.75</span>)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
 <p>Now move to Random Forest modelling</p>
 <div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="dataanalytic-critique.html#cb71-1" aria-hidden="true"></a><span class="co">## Now, let&#39;s use the randomForests package – Classification tree</span></span>
 <span id="cb71-2"><a href="dataanalytic-critique.html#cb71-2" aria-hidden="true"></a><span class="kw">library</span>(randomForest)</span>
@@ -841,7 +845,7 @@ One of the most common uses of GIS and spatial processing functions in <code>r</
 <span id="cb83-2"><a href="dataanalytic-critique.html#cb83-2" aria-hidden="true"></a></span>
 <span id="cb83-3"><a href="dataanalytic-critique.html#cb83-3" aria-hidden="true"></a><span class="co"># Plot the number of trees by the error rate</span></span>
 <span id="cb83-4"><a href="dataanalytic-critique.html#cb83-4" aria-hidden="true"></a><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">500</span>, err[,<span class="st">&quot;OOB&quot;</span>], <span class="dt">xlab=</span><span class="st">&quot;Number of trees&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Error rate&quot;</span>)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="dataanalytic-critique.html#cb84-1" aria-hidden="true"></a><span class="co"># Note: how many trees needed to stabilize prediction</span></span>
 <span id="cb84-2"><a href="dataanalytic-critique.html#cb84-2" aria-hidden="true"></a></span>
 <span id="cb84-3"><a href="dataanalytic-critique.html#cb84-3" aria-hidden="true"></a><span class="co">## Calculate the percent correctly classified from confusion (error) matrix</span></span>
@@ -936,12 +940,12 @@ One of the most common uses of GIS and spatial processing functions in <code>r</
 <span id="cb108-2"><a href="dataanalytic-critique.html#cb108-2" aria-hidden="true"></a></span>
 <span id="cb108-3"><a href="dataanalytic-critique.html#cb108-3" aria-hidden="true"></a><span class="co"># Plot the number of trees by the mse (Mean Square Error)</span></span>
 <span id="cb108-4"><a href="dataanalytic-critique.html#cb108-4" aria-hidden="true"></a><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">500</span>, mse, <span class="dt">xlab=</span><span class="st">&quot;Number of trees&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Mean Square Error rate&quot;</span>)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
 <div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="dataanalytic-critique.html#cb109-1" aria-hidden="true"></a><span class="co"># Note: how many trees needed to stabilize prediction</span></span>
 <span id="cb109-2"><a href="dataanalytic-critique.html#cb109-2" aria-hidden="true"></a></span>
 <span id="cb109-3"><a href="dataanalytic-critique.html#cb109-3" aria-hidden="true"></a><span class="co"># Similarly, plot the number of trees by the rsq (R-Squared)</span></span>
 <span id="cb109-4"><a href="dataanalytic-critique.html#cb109-4" aria-hidden="true"></a><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">500</span>, rsq, <span class="dt">xlab=</span><span class="st">&quot;Number of trees&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;R-Squared&quot;</span>)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-11-3.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-7-3.png" width="672" /></p>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="dataanalytic-critique.html#cb110-1" aria-hidden="true"></a><span class="co"># Again: how many trees needed to stabilize prediction</span></span>
 <span id="cb110-2"><a href="dataanalytic-critique.html#cb110-2" aria-hidden="true"></a></span>
 <span id="cb110-3"><a href="dataanalytic-critique.html#cb110-3" aria-hidden="true"></a><span class="co">## Variable importance – Classification tree</span></span>
@@ -997,10 +1001,10 @@ One of the most common uses of GIS and spatial processing functions in <code>r</
 <span id="cb112-39"><a href="dataanalytic-critique.html#cb112-39" aria-hidden="true"></a></span>
 <span id="cb112-40"><a href="dataanalytic-critique.html#cb112-40" aria-hidden="true"></a><span class="co">## Check function with ASPEN model</span></span>
 <span id="cb112-41"><a href="dataanalytic-critique.html#cb112-41" aria-hidden="true"></a><span class="kw">plotimp</span>(asp.imp)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-11-4.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-7-4.png" width="672" /></p>
 <div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="dataanalytic-critique.html#cb113-1" aria-hidden="true"></a><span class="co">## Now, run funtion with CARBON_KG model</span></span>
 <span id="cb113-2"><a href="dataanalytic-critique.html#cb113-2" aria-hidden="true"></a><span class="kw">plotimp</span>(carb.mod<span class="op">$</span>importance)</span></code></pre></div>
-<p><img src="gg501_files/figure-html/unnamed-chunk-11-5.png" width="672" /></p>
+<p><img src="gg501_files/figure-html/unnamed-chunk-7-5.png" width="672" /></p>
 <div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="dataanalytic-critique.html#cb114-1" aria-hidden="true"></a><span class="co">## Other information from RandomForest model (proximity=TRUE)</span></span>
 <span id="cb114-2"><a href="dataanalytic-critique.html#cb114-2" aria-hidden="true"></a></span>
 <span id="cb114-3"><a href="dataanalytic-critique.html#cb114-3" aria-hidden="true"></a><span class="co"># Measure of internal structure (Proximity measure)</span></span>
@@ -1030,9 +1034,22 @@ One of the most common uses of GIS and spatial processing functions in <code>r</
 </ul>
 </div>
 </div>
-<div id="parameterizationvalidation-i" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Parameterization/Validation I</h2>
-<!-- ## Parameterization/Validation II -->
+<div id="parameterizationvalidation-iii" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Parameterization/Validation I/II</h2>
+<p>Demo in class</p>
+</div>
+<div id="modelling-socio-technical-critique" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Modelling: Socio-Technical Critique</h2>
+<div id="modelcrit2-readings" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Resources this week</h3>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/s10109-020-00334-2">Brundson and Comber 2021</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1364815218303773">Blair et al. 2019</a></li>
+</ul>
+</div>
+</div>
+<div id="communications-strategies-for-eda" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Communications strategies for EDA</h2>
 
 <!-- # Data to Decisions -->
 <!-- Geospatial imagery is an increasingly important type of information source for EDA applications. We consider any image data where earth/environment is captured on pixel arrays and used to better understand environmental phenomena. Such a broad approach to geospatial imagery captures tradtional sources such as earth-observation satellite-based sensors as well as non-traditional platforms such as smartphone cameras, RPS-based image sources, and handheld imaging platforms. Depending on how geospatial information is integrated into image data, there are different considerations for how you might integrated them within a project. We will review some common issues and techniques for handling a variety of image data sources in this chapter. -->

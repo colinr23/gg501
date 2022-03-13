@@ -32,3 +32,7 @@ assignment-2---spatial-and-temporal-visualization-of-urban-data
 submission-1
 assignment-3---tidy-tuesday-submission
 term-project
+parameterizationvalidation-iii
+modelling-socio-technical-critique
+modelcrit2-readings
+communications-strategies-for-eda
