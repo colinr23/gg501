@@ -36,3 +36,5 @@ parameterizationvalidation-iii
 modelling-socio-technical-critique
 modelcrit2-readings
 communications-strategies-for-eda
+data-to-decisions
+commstrat

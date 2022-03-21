@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Data to Decisions | Spatial Knowledge Mobilization</title>
   <meta name="description" content="GG501 is the Spatial Knowedge Mobilization course as part of the Environmental Data Analytics field of specialization." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Data to Decisions | Spatial Knowledge Mobilization" />
   <meta property="og:type" content="book" />
@@ -31,9 +31,10 @@
   
   
 <link rel="prev" href="dataanalytic-critique.html"/>
-<link rel="next" href="references.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="assignments.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +50,9 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -78,38 +80,66 @@
 <ul>
 <li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grading"><i class="fa fa-check"></i><b>1.3.1</b> grading</a></li>
 </ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#remote-access"><i class="fa fa-check"></i><b>1.4</b> remote access</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html"><i class="fa fa-check"></i><b>2</b> Data/Analytic Visualization</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tabular-data"><i class="fa fa-check"></i><b>2.1</b> Tabular Data</a>
+<li class="chapter" data-level="2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#skm-introduction"><i class="fa fa-check"></i><b>2.1</b> SKM Introduction</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-readings"><i class="fa fa-check"></i><b>2.1.1</b> Readings this week</a></li>
-<li class="chapter" data-level="2.1.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-case"><i class="fa fa-check"></i><b>2.1.2</b> Case Study</a></li>
+<li class="chapter" data-level="2.1.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#intro-readings"><i class="fa fa-check"></i><b>2.1.1</b> Readings this week</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-series-data"><i class="fa fa-check"></i><b>2.2</b> Time Series Data</a>
+<li class="chapter" data-level="2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tabular-data"><i class="fa fa-check"></i><b>2.2</b> Tabular Data</a>
 <ul>
-<li class="chapter" data-level="2.2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-readings"><i class="fa fa-check"></i><b>2.2.1</b> Readings this week</a></li>
-<li class="chapter" data-level="2.2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-case"><i class="fa fa-check"></i><b>2.2.2</b> Case Study</a></li>
+<li class="chapter" data-level="2.2.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-readings"><i class="fa fa-check"></i><b>2.2.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.2.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#tab-case"><i class="fa fa-check"></i><b>2.2.2</b> Case Study</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#spatial-data"><i class="fa fa-check"></i><b>2.3</b> Spatial Data</a>
+<li class="chapter" data-level="2.3" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-series-data"><i class="fa fa-check"></i><b>2.3</b> Time Series Data</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-readings"><i class="fa fa-check"></i><b>2.3.1</b> Readings this week</a></li>
-<li class="chapter" data-level="2.3.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-case"><i class="fa fa-check"></i><b>2.3.2</b> Case Study</a></li>
+<li class="chapter" data-level="2.3.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#time-readings"><i class="fa fa-check"></i><b>2.3.1</b> Readings this week</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-data"><i class="fa fa-check"></i><b>2.4</b> Model Data</a>
+<li class="chapter" data-level="2.4" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#spatial-data"><i class="fa fa-check"></i><b>2.4</b> Spatial Data</a>
 <ul>
-<li class="chapter" data-level="2.4.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-readings"><i class="fa fa-check"></i><b>2.4.1</b> Readings this week</a></li>
-<li class="chapter" data-level="2.4.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-case"><i class="fa fa-check"></i><b>2.4.2</b> Case Study</a></li>
+<li class="chapter" data-level="2.4.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-readings"><i class="fa fa-check"></i><b>2.4.1</b> Readings this week</a></li>
+<li class="chapter" data-level="2.4.2" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#space-case"><i class="fa fa-check"></i><b>2.4.2</b> Case Study</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-data"><i class="fa fa-check"></i><b>2.5</b> Model Data</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="dataanalytic-visualization.html"><a href="dataanalytic-visualization.html#model-readings"><i class="fa fa-check"></i><b>2.5.1</b> Resources this week</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html"><i class="fa fa-check"></i><b>3</b> Data/Analytic Critique</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-i"><i class="fa fa-check"></i><b>3.1</b> Parameterization/Validation I</a></li>
-<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-ii"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation II</a></li>
-<li class="chapter" data-level="3.3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-iii"><i class="fa fa-check"></i><b>3.3</b> Parameterization/Validation III</a></li>
+<li class="chapter" data-level="3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#spatial-modelling-example---adapted-workshop-example"><i class="fa fa-check"></i><b>3.1</b> Spatial modelling example - adapted workshop example</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit-readings"><i class="fa fa-check"></i><b>3.1.1</b> Resources this week</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-to-decisions.html"><a href="data-to-decisions.html"><i class="fa fa-check"></i><b>4</b> Data to Decisions</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="3.2" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#parameterizationvalidation-iii"><i class="fa fa-check"></i><b>3.2</b> Parameterization/Validation I/II</a></li>
+<li class="chapter" data-level="3.3" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelling-socio-technical-critique"><i class="fa fa-check"></i><b>3.3</b> Modelling: Socio-Technical Critique</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="dataanalytic-critique.html"><a href="dataanalytic-critique.html#modelcrit2-readings"><i class="fa fa-check"></i><b>3.3.1</b> Resources this week</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-to-decisions.html"><a href="data-to-decisions.html"><i class="fa fa-check"></i><b>4</b> Data to Decisions</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-to-decisions.html"><a href="data-to-decisions.html#communications-strategies-for-eda"><i class="fa fa-check"></i><b>4.1</b> Communications strategies for EDA</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="data-to-decisions.html"><a href="data-to-decisions.html#commstrat"><i class="fa fa-check"></i><b>4.1.1</b> Resources this week</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>5</b> Assignments</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="assignments.html"><a href="assignments.html#assignment-1---exploratory-visulization-in-ggplot"><i class="fa fa-check"></i><b>5.1</b> Assignment 1 - Exploratory Visulization in ggplot</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="assignments.html"><a href="assignments.html#questions"><i class="fa fa-check"></i><b>5.1.1</b> Questions</a></li>
+<li class="chapter" data-level="5.1.2" data-path="assignments.html"><a href="assignments.html#submission"><i class="fa fa-check"></i><b>5.1.2</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="assignments.html"><a href="assignments.html#assignment-2---spatial-and-temporal-visualization-of-urban-data"><i class="fa fa-check"></i><b>5.2</b> Assignment 2 - Spatial and temporal visualization of urban data</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="assignments.html"><a href="assignments.html#submission-1"><i class="fa fa-check"></i><b>5.2.1</b> Submission</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="assignments.html"><a href="assignments.html#assignment-3---tidy-tuesday-submission"><i class="fa fa-check"></i><b>5.3</b> Assignment 3 - Tidy Tuesday Submission</a></li>
+<li class="chapter" data-level="5.4" data-path="assignments.html"><a href="assignments.html#term-project"><i class="fa fa-check"></i><b>5.4</b> Term Project</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -132,8 +162,38 @@
             <section class="normal" id="section-">
 <div id="data-to-decisions" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Data to Decisions</h1>
-<p>Geospatial imagery is an increasingly important type of information source for EDA applications. We consider any image data where earth/environment is captured on pixel arrays and used to better understand environmental phenomena. Such a broad approach to geospatial imagery captures tradtional sources such as earth-observation satellite-based sensors as well as non-traditional platforms such as smartphone cameras, RPS-based image sources, and handheld imaging platforms. Depending on how geospatial information is integrated into image data, there are different considerations for how you might integrated them within a project. We will review some common issues and techniques for handling a variety of image data sources in this chapter.</p>
+<div id="communications-strategies-for-eda" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Communications strategies for EDA</h2>
+<p>Communicating with data is ultimately about telling stories, even when employing the most complex data processing pipelines and computational models. Ultimately, the outptus generated from <em>environmental data analytics</em> are used to improve understanding and decision making on real-world issues. As such, we consider how we tailor our message to specific audiences carefully. As with all knowledge mobilization, we need to consider a range of tools available for communicating insights gained from data intensive analysis, including but not limited to:</p>
+<ul>
+<li>published papers</li>
+<li>blog posts</li>
+<li>conference presentations</li>
+<li>talks at community events</li>
+<li>workshops (academic, community, stakeholder), technical or domain-driven</li>
+<li>software and data documentation</li>
+<li>social media posts (e.g., twitter)</li>
+</ul>
+<div id="commstrat" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Resources this week</h3>
+<p>There is no hard reciple for what to say in a given communication medium. Most advice out there pertain to research talks in a conference style presentation format, and you can build your own synthesis of these guides to help you structure what to include and what to exclude.
+We will focus mostly on this reading - which can be adapted to a variety of contexts</p>
+<ul>
+<li><a href="http://computersciencestudent.com/resources/ResearchTalkJohnFarrell.html">Farrel - short paper</a></li>
+</ul>
+<p>Though other helpful tips are available in the following sources (and many others)</p>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/giving-a-talk.pdf">Jones et al. - short paper</a>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/">video</a></li>
+</ul></li>
+<li><a href="https://www.cis.upenn.edu/~sweirich/talks/plmw15-giving-a-talk.pdf">Weirich - powerpoint</a></li>
+<li><a href="https://www.nature.com/articles/d41586-018-07780-5">Fleming - Nature article</a></li>
+</ul>
+<!-- Geospatial imagery is an increasingly important type of information source for EDA applications. We consider any image data where earth/environment is captured on pixel arrays and used to better understand environmental phenomena. Such a broad approach to geospatial imagery captures tradtional sources such as earth-observation satellite-based sensors as well as non-traditional platforms such as smartphone cameras, RPS-based image sources, and handheld imaging platforms. Depending on how geospatial information is integrated into image data, there are different considerations for how you might integrated them within a project. We will review some common issues and techniques for handling a variety of image data sources in this chapter. -->
 
+</div>
+</div>
 </div>
             </section>
 
@@ -141,11 +201,10 @@
         </div>
       </div>
 <a href="dataanalytic-critique.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="assignments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -164,6 +223,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -184,6 +244,10 @@ gitbook.start({
 "text": null
 },
 "download": ["gg501.pdf", "gg501.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
